@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Аким на 5 часов · Лаборатория городских решений</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-mark">A<span>5</span></span><div>АКИМ НА 5 ЧАСОВ<small>Лаборатория городских решений</small></div></div><span id="connection" class="badge">Загрузка…</span></header>
+<main>
+  <section class="hero">
+    <div><p class="eyebrow">ASTANA INNOVATIONS / СИНТЕТИЧЕСКАЯ МОДЕЛЬ</p><h1>Пять решений.<br><span>Один общий город.</span></h1><p class="hero-copy">Распределите бюджет и узнайте, как изменится жизнь районов через восемь кварталов.</p><div class="hero-tags"><span>100 единиц бюджета</span><span>5 районов</span><span>Горизонт — 2 года</span></div></div>
+    <div class="hero-score"><span>Astana Quality of Life Score</span><div id="hero-score">—</div><p id="hero-delta">Начните с примера или соберите свой сценарий</p><span id="score-state" class="badge light">Исходное состояние</span></div>
+  </section>
+  <div class="toolbar"><p><strong>Ваш сценарий</strong> <span class="muted">/ ровно пять решений</span></p><div class="button-group"><button id="example">Пример задания</button><button id="cheap">Экономный вариант</button><button id="clear" class="quiet">Сбросить</button></div></div>
+  <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+  <section class="metrics" aria-label="Показатели сценария">
+    <article class="metric"><span>Осталось в бюджете</span><strong id="remaining">100 <small>/ 100</small></strong><div class="progress"><span id="budget-fill"></span></div></article>
+    <article class="metric"><span>Решений принято</span><strong id="decision-count">0 <small>/ 5</small></strong><div id="decision-dots" class="dots"></div></article>
+    <article class="metric"><span>Средний балл города</span><strong id="average">—</strong><small>С учётом доли населения</small></article>
+    <article class="metric"><span>Критические показатели</span><strong id="critical">—</strong><small>Каждый ниже 40: штраф −1</small></article>
+  </section>
+  <div class="workspace">
+    <section class="panel catalog"><div class="section-title"><div><p class="eyebrow">01 / ВЫБОР</p><h2>Инициативы для города</h2></div><span class="badge">14 мер</span></div><div id="filters" class="filters" aria-label="Направления"></div><div id="catalog" class="catalog-grid"></div></section>
+    <aside class="panel selected-panel"><div class="section-title"><div><p class="eyebrow">02 / ВАШ ПЛАН</p><h2>Пять приоритетов</h2></div></div><div id="selected"></div><div class="plan-footer"><p id="plan-message" class="muted">Выберите инициативы слева.</p><label class="input-label" for="scenario-name">Название сценария</label><input id="scenario-name" maxlength="60" placeholder="Например, забота о Нуре"><div class="button-group"><button id="save" class="primary" disabled>Сохранить</button><button id="export" disabled>Скачать JSON</button></div></div></aside>
+  </div>
+  <div class="insights">
+    <section class="panel"><div class="section-title"><div><p class="eyebrow">03 / РЕЗУЛЬТАТ</p><h2>Как меняются районы</h2></div><span class="legend"><i></i> Было <i></i> Стало</span></div><div id="district-chart"></div><p id="weakest" class="footnote"></p><details><summary>Показатели и формула</summary><p class="formula">Score = 0,7 × средний балл + 0,3 × минимум районов − критические значения</p><div id="formula-details"></div><div id="indicator-table" class="table-scroll"></div></details></section>
+    <section class="panel advisor-panel"><div class="section-title"><div><p class="eyebrow">04 / ОБЪЯСНЕНИЕ</p><h2>Советник акима</h2></div><span class="advisor-icon">✦</span></div><p class="muted">Аргументы опираются на рассчитанные изменения. Выберите момент, когда хотите получить разбор.</p><button id="explain" class="primary" disabled>Разобрать сценарий</button><div id="briefing"><p class="empty-note">Здесь появятся сильные стороны, риски и предложение по улучшению.</p></div><div class="ask-panel"><h3>Задайте свой вопрос</h3><div class="prompt-chips"><button data-question="Почему Score изменился?">Почему такой Score?</button><button data-question="Что произошло с Нурой?">Что с Нурой?</button><button data-question="Как улучшить сценарий?">Как улучшить?</button></div><form id="question-form"><label for="question">Вопрос о выбранных решениях</label><div class="ask-input"><input id="question" maxlength="240" placeholder="Например, что с транспортом?" required disabled><button id="ask" type="submit" disabled>Спросить</button></div></form><div id="answer" role="status" aria-live="polite"></div></div></section>
+  </div>
+  <section class="panel"><div class="section-title"><div><p class="eyebrow">05 / АЛЬТЕРНАТИВЫ</p><h2>Что можно улучшить</h2></div><span class="badge">Проверено расчётом</span></div><p id="recommendation-note" class="muted">После пяти решений сравним допустимые замены одной меры или её района.</p><div id="recommendations" class="recommendation-grid"></div></section>
+  <section class="panel"><div class="section-title"><div><p class="eyebrow">06 / СРАВНЕНИЕ</p><h2>Сохранённые сценарии</h2></div><span class="badge">В этом браузере</span></div><div id="saved" class="table-scroll"></div></section>
+  <section class="panel"><details><summary>Откуда взялись изменения: вклад мер и синергии</summary><p class="muted">Вклад в Score распределён методом Шепли: учтены все порядки добавления пяти мер. Это математическое распределение результата модели, а не доказательство эффекта в реальном городе.</p><div id="attribution" class="table-scroll"></div><details><summary>Все эффекты по показателям</summary><p class="muted">Эффекты показаны после лага и до ограничения итоговых показателей диапазоном 0–100.</p><div id="effects" class="table-scroll"></div></details></details></section>
+  <footer><span>Аким на 5 часов · командный прототип</span><span>Условные данные. Результаты не являются прогнозом для реальной Астаны.</span></footer>
+</main>
+</body>
+</html>

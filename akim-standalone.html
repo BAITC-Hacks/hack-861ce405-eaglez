@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Аким на 5 часов · Лаборатория городских решений</title>
+  <style>
+:root{font-family:Inter,"Segoe UI",Arial,sans-serif;color:#182f38;background:#f3f5f5;font-synthesis:none;--navy:#153a45;--teal:#007a68;--mint:#b9efd7;--muted:#64777f;--line:#dfe7e7;--orange:#b55b19;--red:#a23530;--surface:#fff}
+*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer;border:1px solid #d7e1e1;border-radius:9px;padding:10px 15px;font-size:13px;font-weight:600;background:#fff;color:#23434d;transition:background .15s,transform .15s}button:hover:not(:disabled){background:#edf5f2;border-color:#76b3a4;transform:translateY(-1px)}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #d99a40;outline-offset:3px}.primary{background:var(--teal);color:white;border-color:var(--teal)}.primary:hover:not(:disabled){background:#005f51;color:white}.quiet{border-color:transparent;background:transparent}.topbar{height:86px;background:#fff;padding:0 max(24px,calc((100vw - 1280px)/2));display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:16px}.brand{display:flex;gap:12px;align-items:center;font-size:13px;font-weight:800;letter-spacing:.075em}.brand small{display:block;letter-spacing:0;font-size:11px;font-weight:400;color:var(--muted);margin-top:5px}.brand-mark{width:43px;height:43px;display:grid;place-content:center;background:var(--navy);border-radius:12px;color:#fff;font-size:24px;position:relative}.brand-mark>span{position:absolute;right:4px;bottom:5px;font-size:11px;color:var(--mint)}main{max-width:1328px;padding:30px 24px 0;margin:auto}.hero{background:var(--navy);border-radius:20px;color:#fff;padding:38px 42px;display:grid;grid-template-columns:1.4fr 1fr;gap:35px;overflow:hidden;position:relative}.hero:after{content:"";width:330px;height:330px;border:1px solid #ffffff12;border-radius:50%;position:absolute;right:-90px;top:-150px;pointer-events:none;box-shadow:0 0 0 40px #ffffff04,0 0 0 90px #ffffff03}.eyebrow{font-size:10px;letter-spacing:.13em;font-weight:750;margin:0 0 12px;color:var(--teal)}.hero .eyebrow{color:var(--mint)}h1{font-size:clamp(30px,3.4vw,46px);font-weight:650;line-height:1.13;margin:0;letter-spacing:-.04em}h1 span{color:var(--mint)}.hero-copy{max-width:460px;font-size:14px;color:#d0e0e4;line-height:1.6;margin:17px 0}.hero-tags{display:flex;gap:9px;flex-wrap:wrap}.hero-tags span{font-size:11px;color:#d6e6e8;border:1px solid #41616b;padding:7px 10px;border-radius:6px}.hero-score{border-left:1px solid #42616a;padding-left:36px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.hero-score>span:first-child{font-size:12px;color:#c7dce0}.hero-score>div{font-size:72px;font-weight:650;line-height:1.12;letter-spacing:-.055em;font-variant-numeric:tabular-nums;margin:13px 0 5px}.hero-score p{font-size:13px;color:var(--mint);margin:5px 0 17px;line-height:1.5}.badge{display:inline-flex;align-items:center;font-size:11px;padding:7px 10px;border-radius:6px;background:#e9f3ef;color:#396354;font-weight:600;white-space:nowrap}.badge.light{color:#d0e7e1;background:#2b515b}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:18px;margin:24px 0 18px}.toolbar p{font-size:14px}.muted{color:var(--muted);font-size:13px;line-height:1.65}.button-group{display:flex;gap:8px;flex-wrap:wrap}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}.metric{background:#fff;padding:20px 22px;border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;gap:11px}.metric>span{font-size:12px;color:var(--muted)}.metric strong{font-size:31px;font-weight:650;letter-spacing:-.03em}.metric strong small{font-size:16px;font-weight:400;color:#829296}.metric>small{font-size:11px;color:var(--muted)}.progress{height:5px;background:#e8efec;border-radius:10px}.progress>span{display:block;background:var(--teal);height:5px;border-radius:10px}.dots{display:flex;gap:5px;height:5px}.dots>span{flex:1;border-radius:10px;background:#e8efec}.dots>span.filled{background:var(--teal)}.workspace{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(310px,1fr);gap:22px;align-items:start}.panel{background:#fff;border:1px solid var(--line);border-radius:15px;padding:24px;margin-bottom:22px;min-width:0}.section-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:20px}.section-title .eyebrow{margin-bottom:8px}h2{font-size:21px;letter-spacing:-.025em;margin:0;font-weight:650}h3{font-size:14px;margin:0 0 10px}.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.filters button{font-size:11px;padding:7px 9px;border-radius:7px}.filters button.active{background:var(--navy);color:#fff;border-color:var(--navy)}.catalog-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.measure{border:1px solid var(--line);border-radius:10px;padding:15px;display:flex;flex-direction:column;position:relative;min-width:0}.measure.selected{border-color:#66b49f;background:#f4faf7}.measure-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.category{font-size:10px;color:var(--teal);font-weight:650}.price{font-size:19px;font-weight:700}.price small{font-size:10px;color:var(--muted);font-weight:400}.measure h3{font-size:13px;line-height:1.5;min-height:39px}.measure .meta{font-size:10px;color:var(--muted);margin-bottom:9px}.effect-tags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:13px}.effect-tags span{font-size:10px;background:#eef3f2;padding:4px 5px;border-radius:4px}.effect-tags span.negative{color:var(--red);background:#fff0ec}.measure .add-area{margin-top:auto;display:flex;gap:6px}.measure select{min-width:0;width:100%;border:1px solid var(--line);border-radius:7px;padding:8px;background:white;font-size:12px}.measure button{font-size:12px;padding:8px 11px}.measure .city-label{font-size:11px;color:var(--muted);flex:1;align-self:center}.selected-panel{position:sticky;top:18px}.slot{display:flex;align-items:flex-start;gap:10px;padding:13px 0;border-bottom:1px solid #e8eded}.slot-number{width:25px;height:25px;display:grid;place-items:center;flex-shrink:0;border-radius:7px;background:#e9f5ef;color:var(--teal);font-size:11px;font-weight:700}.slot.empty .slot-number{background:#f3f5f5;color:#9ca9ac}.slot-content{flex:1}.slot-content strong{font-size:12px;line-height:1.5;display:block}.slot-content small{font-size:11px;color:var(--muted);display:block;margin-top:4px}.remove{padding:3px 7px;font-size:17px;border:0;color:#8c9b9e;background:transparent}.slot.empty{align-items:center;color:#99a7ab;font-size:12px;min-height:58px}.plan-footer{padding-top:12px}.plan-footer p{margin:0 0 14px}.input-label{font-size:11px;color:var(--muted);display:block;margin-bottom:6px}input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid var(--line);margin-bottom:12px;font-size:13px}.insights{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}.legend{font-size:10px;color:var(--muted);white-space:nowrap}.legend i{display:inline-block;width:8px;height:8px;background:#d5e3df;margin:0 4px 0 10px;border-radius:2px}.legend i:last-child{background:var(--teal)}.district-row{display:grid;grid-template-columns:75px 1fr 82px;gap:14px;align-items:center;margin:19px 0;font-size:12px}.district-row .values{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}.district-row .values small{display:block;font-size:10px;color:var(--teal);margin-top:3px}.district-bars{display:flex;flex-direction:column;gap:3px}.district-bars span{height:6px;background:#d5e3df;border-radius:3px;max-width:100%}.district-bars span:last-child{background:var(--teal)}.footnote{font-size:11px;color:var(--muted);line-height:1.6;border-top:1px solid var(--line);padding-top:14px}.advisor-icon{background:#e7f4ed;color:var(--teal);width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:25px}.advisor-panel>.muted{margin-top:0}.empty-note{color:#8b9c9f;font-size:13px;line-height:1.7;margin:30px 0 15px}.briefing-mode{font-size:11px;color:var(--muted);margin-top:20px}.briefing-summary{font-size:14px;line-height:1.6;font-weight:600}.briefing-list{font-size:12px;padding-left:18px;line-height:1.65;color:#46606a}.briefing-list li{padding-bottom:7px}.notice{border:1px solid #e7bc90;background:#fff5e7;color:#6d481f;padding:12px 16px;border-radius:9px;margin-bottom:18px;font-size:13px}.notice.error{background:#fff1ef;color:var(--red);border-color:#edbab5}.recommendation-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.recommendation{border:1px solid var(--line);padding:18px;border-radius:10px}.recommendation-score{font-size:30px;font-weight:650;letter-spacing:-.03em;margin:10px 0}.recommendation-score small{font-size:13px;color:var(--teal);margin-left:10px}.recommendation p{font-size:12px;line-height:1.65;color:var(--muted)}.recommendation button{width:100%;margin-top:8px}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:12px}th{color:var(--muted);font-weight:500;font-size:11px}td,th{text-align:left;border-bottom:1px solid var(--line);padding:12px 8px;white-space:nowrap}.table-scroll button{padding:6px 9px;font-size:11px}td.danger{color:var(--red);background:#fff0ec}.saved-name{max-width:220px;overflow:hidden;text-overflow:ellipsis}.positive{color:var(--teal)}details{margin-top:17px}summary{cursor:pointer;font-size:12px;color:#315b64;font-weight:650;line-height:1.6}.formula{font-size:12px;line-height:1.6;background:#f3f7f5;padding:12px;border-radius:8px}#formula-details{font-size:12px;color:var(--muted);line-height:1.6}footer{display:flex;justify-content:space-between;gap:15px;font-size:10px;color:#7b8e95;padding:5px 0 30px;line-height:1.6}[hidden]{display:none!important}
+@media(min-width:1600px){main{padding-top:40px}}@media(max-width:1080px){.workspace{grid-template-columns:minmax(0,1.3fr) minmax(300px,1fr)}.catalog-grid{grid-template-columns:1fr}.metrics{gap:10px}.metric{padding:17px}.hero{padding:30px}.hero-score{padding-left:25px}.insights{grid-template-columns:1fr 1fr}.legend{display:none}}
+@media(max-width:760px){.topbar{height:74px;padding:0 16px}.brand{font-size:10px}.brand small{font-size:9px}.brand-mark{width:35px;height:35px;font-size:20px}#connection{font-size:9px;max-width:135px;white-space:normal;text-align:center}main{padding:18px 14px 0}.hero{padding:24px;grid-template-columns:1fr;gap:24px;border-radius:14px}.hero .eyebrow{font-size:8px}.hero-score{border-left:0;border-top:1px solid #42616a;padding:22px 0 0}.hero-score>div{font-size:58px;margin:6px 0}.hero-tags{gap:5px}.hero-tags span{font-size:9px}.toolbar{align-items:flex-start;flex-direction:column;gap:8px}.toolbar p{margin:0}.toolbar button{font-size:11px;padding:8px 9px}.metrics{grid-template-columns:1fr 1fr}.metric{padding:16px 14px;gap:9px}.metric strong{font-size:28px}.metric>span{font-size:10px}.metric>small{font-size:9px}.workspace,.insights{grid-template-columns:1fr;gap:0}.selected-panel{position:static}.panel{padding:20px 16px;margin-bottom:16px}.catalog-grid{grid-template-columns:1fr 1fr;gap:9px}.measure{padding:12px}.measure h3{font-size:12px}.measure .add-area{flex-wrap:wrap}.measure select{flex:1;flex-basis:90px}.measure button{flex:1}.recommendation-grid{grid-template-columns:1fr}.section-title .badge{font-size:9px;padding:6px}h2{font-size:19px}.district-row{grid-template-columns:65px 1fr 72px;gap:9px;font-size:11px}footer{flex-direction:column;gap:6px}}
+@media(prefers-reduced-motion:reduce){button{transition:none}button:hover:not(:disabled){transform:none}}
+@media(min-width:761px){.catalog-grid{max-height:700px;overflow-y:auto;padding-right:7px;scrollbar-width:thin;scrollbar-color:#a8c4bb #f4f7f5}}
+.ask-panel{border-top:1px solid var(--line);padding-top:21px;margin-top:24px}.ask-panel h3{font-size:14px}.ask-panel label{font-size:11px;color:var(--muted);display:block;margin:13px 0 6px}.prompt-chips{display:flex;flex-wrap:wrap;gap:6px}.prompt-chips button{padding:7px 9px;font-size:10px;border-radius:20px;background:#f2f8f5}.ask-input{display:flex;gap:7px;align-items:stretch}.ask-input input{margin:0;min-width:0;flex:1}.ask-input button{white-space:nowrap}#answer{min-height:0}#answer .briefing-mode{margin-bottom:7px}#answer .briefing-list{margin-top:8px}
+
+</style>
+  
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-mark">A<span>5</span></span><div>АКИМ НА 5 ЧАСОВ<small>Лаборатория городских решений</small></div></div><span id="connection" class="badge">Загрузка…</span></header>
+<main>
+  <section class="hero">
+    <div><p class="eyebrow">ASTANA INNOVATIONS / СИНТЕТИЧЕСКАЯ МОДЕЛЬ</p><h1>Пять решений.<br><span>Один общий город.</span></h1><p class="hero-copy">Распределите бюджет и узнайте, как изменится жизнь районов через восемь кварталов.</p><div class="hero-tags"><span>100 единиц бюджета</span><span>5 районов</span><span>Горизонт — 2 года</span></div></div>
+    <div class="hero-score"><span>Astana Quality of Life Score</span><div id="hero-score">—</div><p id="hero-delta">Начните с примера или соберите свой сценарий</p><span id="score-state" class="badge light">Исходное состояние</span></div>
+  </section>
+  <div class="toolbar"><p><strong>Ваш сценарий</strong> <span class="muted">/ ровно пять решений</span></p><div class="button-group"><button id="example">Пример задания</button><button id="cheap">Экономный вариант</button><button id="clear" class="quiet">Сбросить</button></div></div>
+  <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+  <section class="metrics" aria-label="Показатели сценария">
+    <article class="metric"><span>Осталось в бюджете</span><strong id="remaining">100 <small>/ 100</small></strong><div class="progress"><span id="budget-fill"></span></div></article>
+    <article class="metric"><span>Решений принято</span><strong id="decision-count">0 <small>/ 5</small></strong><div id="decision-dots" class="dots"></div></article>
+    <article class="metric"><span>Средний балл города</span><strong id="average">—</strong><small>С учётом доли населения</small></article>
+    <article class="metric"><span>Критические показатели</span><strong id="critical">—</strong><small>Каждый ниже 40: штраф −1</small></article>
+  </section>
+  <div class="workspace">
+    <section class="panel catalog"><div class="section-title"><div><p class="eyebrow">01 / ВЫБОР</p><h2>Инициативы для города</h2></div><span class="badge">14 мер</span></div><div id="filters" class="filters" aria-label="Направления"></div><div id="catalog" class="catalog-grid"></div></section>
+    <aside class="panel selected-panel"><div class="section-title"><div><p class="eyebrow">02 / ВАШ ПЛАН</p><h2>Пять приоритетов</h2></div></div><div id="selected"></div><div class="plan-footer"><p id="plan-message" class="muted">Выберите инициативы слева.</p><label class="input-label" for="scenario-name">Название сценария</label><input id="scenario-name" maxlength="60" placeholder="Например, забота о Нуре"><div class="button-group"><button id="save" class="primary" disabled>Сохранить</button><button id="export" disabled>Скачать JSON</button></div></div></aside>
+  </div>
+  <div class="insights">
+    <section class="panel"><div class="section-title"><div><p class="eyebrow">03 / РЕЗУЛЬТАТ</p><h2>Как меняются районы</h2></div><span class="legend"><i></i> Было <i></i> Стало</span></div><div id="district-chart"></div><p id="weakest" class="footnote"></p><details><summary>Показатели и формула</summary><p class="formula">Score = 0,7 × средний балл + 0,3 × минимум районов − критические значения</p><div id="formula-details"></div><div id="indicator-table" class="table-scroll"></div></details></section>
+    <section class="panel advisor-panel"><div class="section-title"><div><p class="eyebrow">04 / ОБЪЯСНЕНИЕ</p><h2>Советник акима</h2></div><span class="advisor-icon">✦</span></div><p class="muted">Аргументы опираются на рассчитанные изменения. Выберите момент, когда хотите получить разбор.</p><button id="explain" class="primary" disabled>Разобрать сценарий</button><div id="briefing"><p class="empty-note">Здесь появятся сильные стороны, риски и предложение по улучшению.</p></div><div class="ask-panel"><h3>Задайте свой вопрос</h3><div class="prompt-chips"><button data-question="Почему Score изменился?">Почему такой Score?</button><button data-question="Что произошло с Нурой?">Что с Нурой?</button><button data-question="Как улучшить сценарий?">Как улучшить?</button></div><form id="question-form"><label for="question">Вопрос о выбранных решениях</label><div class="ask-input"><input id="question" maxlength="240" placeholder="Например, что с транспортом?" required disabled><button id="ask" type="submit" disabled>Спросить</button></div></form><div id="answer" role="status" aria-live="polite"></div></div></section>
+  </div>
+  <section class="panel"><div class="section-title"><div><p class="eyebrow">05 / АЛЬТЕРНАТИВЫ</p><h2>Что можно улучшить</h2></div><span class="badge">Проверено расчётом</span></div><p id="recommendation-note" class="muted">После пяти решений сравним допустимые замены одной меры или её района.</p><div id="recommendations" class="recommendation-grid"></div></section>
+  <section class="panel"><div class="section-title"><div><p class="eyebrow">06 / СРАВНЕНИЕ</p><h2>Сохранённые сценарии</h2></div><span class="badge">В этом браузере</span></div><div id="saved" class="table-scroll"></div></section>
+  <section class="panel"><details><summary>Откуда взялись изменения: вклад мер и синергии</summary><p class="muted">Вклад в Score распределён методом Шепли: учтены все порядки добавления пяти мер. Это математическое распределение результата модели, а не доказательство эффекта в реальном городе.</p><div id="attribution" class="table-scroll"></div><details><summary>Все эффекты по показателям</summary><p class="muted">Эффекты показаны после лага и до ограничения итоговых показателей диапазоном 0–100.</p><div id="effects" class="table-scroll"></div></details></details></section>
+  <footer><span>Аким на 5 часов · командный прототип</span><span>Условные данные. Результаты не являются прогнозом для реальной Астаны.</span></footer>
+</main>
+<script>
+const CityEngine=(function(){
+const module={exports:{}};
+'use strict';
+const K=['T1','T2','E1','E2','S1','S2','B1','B2','C1','C2'];
+const W=[.10,.10,.09,.11,.11,.11,.09,.09,.10,.10];
+const districts=[
+ {name:'Есиль',pop:.27,v:[45,62,68,72,48,55,78,60,75,70]},
+ {name:'Алматы',pop:.24,v:[40,75,50,55,60,65,62,52,50,60]},
+ {name:'Сарыарка',pop:.20,v:[50,70,42,40,62,68,58,55,45,55]},
+ {name:'Байконур',pop:.13,v:[52,68,55,50,58,60,52,58,55,58]},
+ {name:'Нура',pop:.16,v:[55,40,45,65,38,35,55,50,60,50]}
+];
+const measures=[
+ ['M1','Транспорт','Выделенные полосы для автобусов','Район',18,2,{T1:6,T2:9}],
+ ['M2','Транспорт','Умные светофоры','Город',22,2,{T1:4,B2:3}],
+ ['M3','Транспорт','Линия ЛРТ / расширение','Район',30,4,{T1:16,T2:20,E2:4}],
+ ['M4','Экология','Парк / сквер','Район',15,2,{E1:12,E2:3,B1:2}],
+ ['M5','Экология','Переход на чистое топливо','Район',25,3,{E2:14,C1:4}],
+ ['M6','Экология','Озеленение и ветрозащитные полосы','Город',20,4,{E1:5,E2:3}],
+ ['M7','Соцсфера','Школа + детсад','Район',24,3,{S1:16}],
+ ['M8','Соцсфера','Центр семейного здоровья','Район',20,3,{S2:14}],
+ ['M9','Соцсфера','Дворовые спорт-хабы','Район',10,1,{S1:3,S2:3,B1:3}],
+ ['M10','Безопасность','Освещение и камеры','Район',12,1,{B1:12,B2:2}],
+ ['M11','Безопасность','Безопасные переходы','Район',10,1,{B2:12,T1:-2}],
+ ['M12','Сервисы','Платформа обращений','Город',14,1,{C2:5}],
+ ['M13','Сервисы','Модернизация сетей','Район',28,4,{C1:18,E2:2}],
+ ['M14','Сервисы','Аварийные бригады ЖКХ','Город',16,1,{C1:5,C2:2}]
+].map(([id,category,name,type,cost,lag,effects])=>({id,category,name,type,cost,lag,effects}));
+const byId=Object.fromEntries(measures.map(m=>[m.id,m]));
+function validate(choices,complete=true){
+ const errors=[]; if(!Array.isArray(choices))return ['Ожидался список решений.'];
+ if(complete&&choices.length!==5)errors.push('Нужно ровно 5 решений.');
+ if(choices.length>5)return ['Нельзя выбрать более 5 решений.'];
+ const seen=new Set(),counts={},where={};let cost=0;
+ for(const choice of choices){const m=choice && typeof choice.id==='string' && Object.hasOwn(byId,choice.id)?byId[choice.id]:null;if(!m){errors.push('Неизвестное мероприятие.');continue}
+  if(seen.has(m.id))errors.push(`${m.id} уже выбрано.`);seen.add(m.id);cost+=m.cost;counts[m.category]=(counts[m.category]||0)+1;
+  if(m.type==='Район'&&!districts.some(d=>d.name===choice.district))errors.push(`${m.id}: выберите район.`);
+  if(m.type==='Город'&&choice.district!=null)errors.push(`${m.id}: для городской меры район не выбирают.`);
+  where[m.id]=choice.district;
+ }
+ if(cost>100)errors.push(`Бюджет превышен: ${cost} > 100.`);
+ for(const [category,n] of Object.entries(counts))if(n>2)errors.push(`Направление «${category}»: более двух мер.`);
+ if(seen.has('M1')&&seen.has('M3'))errors.push('M1 и M3 несовместимы.');
+ for(const [a,b] of [['M4','M7'],['M5','M13']])if(seen.has(a)&&seen.has(b)&&where[a]===where[b])errors.push(`${a} и ${b} несовместимы в одном районе.`);
+ return errors;
+}
+function calculate(choices){const errors=validate(choices);if(errors.length)return {valid:false,errors};
+ return evaluate(choices);
+}
+// Internal counterfactual evaluator: callers must validate playable scenarios.
+function evaluate(choices){
+ const values=districts.map(d=>[...d.v]);const contributions=[];
+ for(const choice of [...choices].sort((a,b)=>a.id.localeCompare(b.id))){const m=byId[choice.id],targets=m.type==='Город'?districts.map((_,i)=>i):[districts.findIndex(d=>d.name===choice.district)],factor=(8-m.lag)/8;
+  for(const d of targets)for(const [key,raw] of Object.entries(m.effects)){const k=K.indexOf(key),delta=raw*factor;values[d][k]+=delta;contributions.push({source:m.id,district:districts[d].name,indicator:key,delta});}
+ }
+ const ids=new Set(choices.map(c=>c.id));
+ for(const [a,b,key,bonus] of [['M1','M2','T1',2],['M10','M12','B1',2],['M5','M6','E2',2]])if(ids.has(a)&&ids.has(b)){
+  const d=districts.findIndex(x=>x.name===choices.find(c=>c.id===a).district);values[d][K.indexOf(key)]+=bonus;contributions.push({source:`${a}+${b}`,district:districts[d].name,indicator:key,delta:bonus});
+ }
+ const rows=values.map((v,i)=>{const indicators=v.map(x=>Math.max(0,Math.min(100,x)));const score=indicators.reduce((s,x,k)=>s+x*W[k],0);return {name:districts[i].name,pop:districts[i].pop,indicators,score,baseline:districts[i].v.reduce((s,x,k)=>s+x*W[k],0)};});
+ const average=rows.reduce((s,r)=>s+r.pop*r.score,0),minimum=Math.min(...rows.map(r=>r.score));
+ const critical=rows.flatMap(r=>r.indicators.flatMap((x,k)=>x<40?[`${r.name} · ${K[k]} (${x.toFixed(2)})`]:[]));
+ const criticalCells=rows.flatMap(r=>r.indicators.flatMap((value,k)=>value<40?[{district:r.name,indicator:K[k],value}]:[]));
+ return {valid:true,cost:choices.reduce((s,c)=>s+byId[c.id].cost,0),score:.7*average+.3*minimum-critical.length,average,minimum,critical,criticalCells,rows,contributions};
+}
+const baseline=(()=>{const rows=districts.map(d=>d.v.reduce((s,x,k)=>s+x*W[k],0));const avg=rows.reduce((s,x,i)=>s+x*districts[i].pop,0);const critical=districts.flatMap(d=>d.v.filter(x=>x<40)).length;return {rows,average:avg,critical,score:.7*avg+.3*Math.min(...rows)-critical}})();
+module.exports={K,W,districts,measures,validate,calculate,evaluate,baseline};
+
+return module.exports;
+})();
+const CityAnalysis=(function(){
+const module={exports:{}};
+const require = name => {if(name!=="./engine")throw new Error("Unknown module");return CityEngine;};
+'use strict';
+const { K, W, districts, measures, calculate, evaluate, baseline } = require('./engine');
+const names = ['Разгрузка дорог', 'Общественный транспорт', 'Озеленение', 'Качество воздуха', 'Школы и детсады', 'Поликлиники', 'Безопасность улиц', 'Безопасность движения', 'Надёжность ЖКХ', 'Обращения жителей'];
+const lookup = Object.fromEntries(measures.map(m => [m.id, m]));
+const fmt = n => n.toFixed(2);
+const signed = n => `${n >= 0 ? '+' : ''}${fmt(n)}`;
+
+// Exact Shapley allocation for five decisions: evaluate 32 subsets.
+// Subsets are mathematical counterfactuals, not playable scenarios.
+function attribution(choices) {
+  const n = choices.length, scores = [], factorial = [1, 1, 2, 6, 24, 120];
+  for (let mask = 0; mask < 2 ** n; mask++) scores[mask] = evaluate(choices.filter((_, i) => mask & (1 << i))).score;
+  return choices.map((choice, i) => {
+    let value = 0;
+    for (let mask = 0; mask < 2 ** n; mask++) {
+      if (mask & (1 << i)) continue;
+      const size = mask.toString(2).replaceAll('0', '').length;
+      value += factorial[size] * factorial[n - size - 1] / factorial[n] * (scores[mask | (1 << i)] - scores[mask]);
+    }
+    return { ...choice, name: lookup[choice.id].name, value };
+  });
+}
+
+function recommend(choices, current) {
+  const seen = new Set(), candidates = [];
+  let checked = 0;
+  for (let remove = 0; remove < choices.length; remove++) {
+    const rest = choices.filter((_, i) => i !== remove);
+    for (const measure of measures) {
+      if (rest.some(c => c.id === measure.id)) continue;
+      for (const district of measure.type === 'Город' ? [null] : districts.map(d => d.name)) {
+        const replacement = { id: measure.id, district };
+        if (JSON.stringify(replacement) === JSON.stringify(choices[remove])) continue;
+        const next = [...rest, replacement];
+        const key = next.map(c => `${c.id}:${c.district || ''}`).sort().join('|');
+        if (seen.has(key)) continue;
+        seen.add(key);
+        const result = calculate(next);
+        if (!result.valid) continue;
+        checked++;
+        if (result.score <= current.score + 1e-9) continue;
+        candidates.push({ choices: next, remove: choices[remove], add: replacement, score: result.score, gain: result.score - current.score, cost: result.cost, critical: result.critical.length, minimum: result.minimum });
+      }
+    }
+  }
+  candidates.sort((a, b) => b.score - a.score || a.cost - b.cost || JSON.stringify(a.choices).localeCompare(JSON.stringify(b.choices)));
+  return { checked, scope: 'Все допустимые замены одной меры или её района; глобальный оптимум не заявляется.', candidates: candidates.slice(0, 3).map((c, i) => ({ id: `candidate-${i + 1}`, ...c })) };
+}
+
+function factCatalog(result, shares, recommendations) {
+  const strengths = [], risks = [];
+  const weak = result.rows.filter(r => Math.abs(r.score - result.minimum) < 1e-9).map(r => r.name).join(', ');
+  const summary = `Score ${fmt(result.score)}: ${signed(result.score - baseline.score)} к базе ${fmt(baseline.score)}. Бюджет ${result.cost} из 100.`;
+  strengths.push({ id: 'formula', text: `Формула: 0,7 × средневзвешенный балл ${fmt(result.average)} + 0,3 × балл слабейшего района ${fmt(result.minimum)} − штраф ${result.critical.length} = ${fmt(result.score)}.` });
+  for (const [i, row] of result.rows.entries()) {
+    const delta = row.score - row.baseline;
+    if (delta > 0) strengths.push({ id: `district-${i}`, text: `${row.name}: оценка района выросла с ${fmt(row.baseline)} до ${fmt(row.score)} (${signed(delta)}).` });
+    if (Math.abs(delta) < 1e-9) risks.push({ id: `unchanged-${i}`, text: `${row.name}: оценка района осталась ${fmt(row.score)}; сценарий не улучшает его показатели.` });
+  }
+  const count = result.critical.length;
+  if (!count) strengths.unshift({ id: 'critical-cleared', text: 'Все показатели достигли порога 40: штраф за критические значения равен 0.' });
+  else risks.unshift({ id: 'critical-remain', text: `Критических значений ниже 40: ${count}. Штраф ${count}; проблемные ячейки: ${result.critical.join('; ')}.` });
+  risks.push({ id: 'weakest', text: `Слабейший район: ${weak}, балл ${fmt(result.minimum)}. Эта оценка задаёт 30% итоговой формулы.` });
+  for (const contribution of result.contributions.filter(c => c.delta < 0)) risks.push({ id: `tradeoff-${contribution.source}`, text: `${contribution.source}: ${contribution.district}, ${names[K.indexOf(contribution.indicator)]} снижается на ${fmt(-contribution.delta)} — компромисс выбранной меры.` });
+  const lagged = shares.map(c => lookup[c.id]).filter(m => m.lag >= 3);
+  if (lagged.length) risks.push({ id: 'lag', text: `У мер ${lagged.map(m => m.id).join(', ')} лаг от 3 кварталов. В горизонте 8 кварталов учтена только часть полного эффекта.` });
+  const top = [...shares].sort((a, b) => b.value - a.value)[0];
+  if (top) strengths.push({ id: 'attribution', text: `${top.id} (${top.name}) получает наибольший вклад по Шепли: ${signed(top.value)} балла. Метод распределяет общий прирост с учётом взаимодействий.` });
+  for (const contribution of shares) {
+    const fact = { id: `measure-${contribution.id}`, text: `${contribution.id} (${contribution.name}, ${contribution.district || 'весь город'}): распределённый вклад в Score ${signed(contribution.value)} балла.` };
+    (contribution.value < 0 ? risks : strengths).push(fact);
+  }
+  for (const [id, label, indices] of [
+    ['transport', 'Транспорт', [0, 1]], ['ecology', 'Экология', [2, 3]],
+    ['social', 'Соцсфера', [4, 5]], ['safety', 'Безопасность', [6, 7]],
+    ['services', 'Городские сервисы', [8, 9]]
+  ]) {
+    const delta = result.rows.reduce((sum, row, i) => sum + row.pop * indices.reduce((s, k) => s + W[k] * (row.indicators[k] - districts[i].v[k]), 0), 0);
+    const fact = { id: `category-${id}`, text: `${label}: вклад направления в средневзвешенную оценку города изменился на ${signed(delta)} балла.` };
+    (delta < 0 ? risks : strengths).push(fact);
+  }
+  const synergySources = [...new Set(result.contributions.filter(c => c.source.includes('+')).map(c => c.source))];
+  if (synergySources.length) strengths.push({ id: 'synergy', text: `Сработали синергии ${synergySources.join(', ')}; фиксированные бонусы добавлены без уменьшения на лаг.` });
+  return { summary, strengths, risks, recommendations: recommendations.candidates.map(c => ({ id: c.id, text: `Заменить ${c.remove.id} (${c.remove.district || 'город'}) на ${c.add.id} (${c.add.district || 'город'}): Score ${fmt(c.score)}, прирост ${signed(c.gain)}, стоимость ${c.cost}.` })) };
+}
+
+function relevantFacts(analysis, question = '') {
+  const q = question.toLocaleLowerCase('ru').trim();
+  const priority = [];
+  if (/нур/.test(q)) priority.push('district-4', 'weakest', 'critical-remain');
+  if (/есил/.test(q)) priority.push('district-0');
+  if (/алмат/.test(q)) priority.push('district-1');
+  if (/сарыарк/.test(q)) priority.push('district-2');
+  if (/байконур/.test(q)) priority.push('district-3');
+  for (const [pattern, id] of [
+    [/транспорт|пробк|автобус|ларт|лрт/, 'transport'], [/эколог|воздух|озелен|смог/, 'ecology'],
+    [/школ|поликлин|соц/, 'social'], [/безопас|дтп|камер/, 'safety'], [/жкх|сервис|обращен/, 'services']
+  ]) if (pattern.test(q)) priority.push(`category-${id}`);
+  const measure = q.match(/\bm\s?(1[0-4]|[1-9])\b/i);
+  if (measure) priority.push(`measure-M${measure[1]}`);
+  if (/score|балл|формул|почему/.test(q)) priority.push('formula', 'attribution');
+  if (/улучш|замен|лучше|рекоменд/.test(q)) priority.push('attribution');
+  const ordered = facts => [...facts].sort((a, b) => {
+    const ai = priority.indexOf(a.id), bi = priority.indexOf(b.id);
+    return (ai < 0 ? 100 : ai) - (bi < 0 ? 100 : bi);
+  });
+  const facts = analysis.facts;
+  return { strengths: ordered(facts.strengths).slice(0, 3), risks: ordered(facts.risks).slice(0, 3) };
+}
+
+function analyze(choices) {
+  const result = calculate(choices);
+  if (!result.valid) return result;
+  const shares = attribution(choices), recommendations = recommend(choices, result);
+  return { ...result, baseline, delta: result.score - baseline.score, attribution: shares, recommendations, facts: factCatalog(result, shares, recommendations) };
+}
+module.exports = { analyze, attribution, recommend, relevantFacts, names, fmt };
+
+return module.exports;
+})();
+const CityPresets=(function(){
+const module={exports:{}};
+'use strict';
+const example = [['M7', 'Нура'], ['M8', 'Нура'], ['M10', 'Нура'], ['M12', null], ['M5', 'Сарыарка']].map(([id, district]) => ({ id, district }));
+const cheap = [['M9', 'Нура'], ['M11', 'Нура'], ['M10', 'Нура'], ['M12', null], ['M4', 'Сарыарка']].map(([id, district]) => ({ id, district }));
+module.exports = { example, cheap };
+
+return module.exports;
+})();
+const localApi = async (route, body) => {
+  if(route === '/api/config') return {
+    indicators:CityEngine.K.map((id,i)=>({id,name:CityAnalysis.names[i],weight:CityEngine.W[i]})),
+    districts:CityEngine.districts, measures:CityEngine.measures,
+    baseline:{...CityEngine.baseline,details:CityEngine.evaluate([])},
+    ai:{provider:'offline',configured:false,model:null},presets:CityPresets
+  };
+  const complete=route !== '/api/validate';
+  const errors=CityEngine.validate(body?.choices,complete);
+  if(errors.length)throw new Error(errors.join(' '));
+  if(!complete)return {valid:true};
+  const result=CityAnalysis.analyze(body.choices);
+  if(route === '/api/analyze')return result;
+  if(route === '/api/explain' || route === '/api/ask'){
+    const question = route === '/api/ask' && typeof body?.question === 'string' ? body.question.trim() : '';
+    if(route === '/api/ask' && (question.length < 3 || question.length > 240))throw new Error('Вопрос должен содержать от 3 до 240 символов.');
+    const facts=result.facts;
+    const selected=CityAnalysis.relevantFacts(result,question);
+    return {mode:'offline',reason:'offline',summary:facts.summary,
+      strengths:selected.strengths.map(x=>x.text),
+      risks:selected.risks.map(x=>x.text),
+      recommendation:facts.recommendations[0]||null};
+  }
+  throw new Error('Неизвестный адрес.');
+};
+
+'use strict';
+const $ = id => document.getElementById(id);
+const escapeHtml = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const fmt = n => Number(n).toFixed(2).replace('.', ',');
+const signed = n => `${n >= 0 ? '+' : ''}${fmt(n)}`;
+const state = { config: null, choices: [], result: null, filter: 'Все', saved: [], revision: 0, selectedDistricts: {}, busy: false, aiBusy: false };
+const storageKey = 'akim-scenarios-v2';
+const lookup = id => state.config.measures.find(m => m.id === id);
+
+function notice(text, error = false) {
+  $('notice').hidden = !text;
+  $('notice').className = `notice${error ? ' error' : ''}`;
+  $('notice').textContent = text;
+}
+const api=localApi;
+function readStored() {
+  try {
+    const data = JSON.parse(localStorage.getItem(storageKey) || '[]');
+    if (!Array.isArray(data)) return [];
+    return data.filter(s => s && typeof s.name === 'string' && Array.isArray(s.choices) && s.choices.length === 5).slice(-12).map(s => ({ name: s.name.slice(0, 60), choices: s.choices.map(c => ({ id: c?.id, district: c?.district ?? null })) }));
+  } catch { return []; }
+}
+function writeStored() {
+  try { localStorage.setItem(storageKey, JSON.stringify(state.saved.map(({ name, choices }) => ({ name, choices })))); }
+  catch { notice('Браузер не разрешил сохранение. Скачайте сценарий как JSON.', true); }
+}
+function setFilter(category) { state.filter = category; renderCatalog(); }
+function renderCatalog() {
+  const categories = ['Все', ...new Set(state.config.measures.map(m => m.category))];
+  $('filters').innerHTML = categories.map(c => `<button type="button" class="${state.filter === c ? 'active' : ''}" data-filter="${escapeHtml(c)}" aria-pressed="${state.filter === c}">${escapeHtml(c)}</button>`).join('');
+  $('filters').querySelectorAll('button').forEach(b => b.onclick = () => setFilter(b.dataset.filter));
+  $('catalog').innerHTML = state.config.measures.filter(m => state.filter === 'Все' || m.category === state.filter).map(m => {
+    const selected = state.choices.some(c => c.id === m.id);
+    const cost = state.choices.reduce((s, c) => s + lookup(c.id).cost, 0);
+    const tooExpensive = cost + m.cost > 100;
+    const district = state.selectedDistricts[m.id] || 'Нура';
+    const disabled = selected || state.choices.length === 5 || tooExpensive || state.busy;
+    return `<article class="measure ${selected ? 'selected' : ''}"><div class="measure-top"><span class="category">${escapeHtml(m.category)} · ${m.id}</span><span class="price">${m.cost} <small>ед.</small></span></div><h3>${escapeHtml(m.name)}</h3><div class="meta">${m.type === 'Город' ? 'Все районы' : 'Один район'} · лаг ${m.lag} кв. · реализуется ${(8 - m.lag) / 8 * 100}%</div><div class="effect-tags">${Object.entries(m.effects).map(([k, v]) => `<span class="${v < 0 ? 'negative' : ''}" title="Полный эффект до учёта лага">${k} ${v > 0 ? '+' : ''}${v}</span>`).join('')}</div><div class="add-area">${m.type === 'Район' ? `<select data-district="${m.id}" aria-label="Район для ${m.id}" ${selected ? 'disabled' : ''}>${state.config.districts.map(d => `<option ${d.name === district ? 'selected' : ''}>${escapeHtml(d.name)}</option>`).join('')}</select>` : '<span class="city-label">Весь город</span>'}<button data-add="${m.id}" ${disabled ? 'disabled' : ''} title="${tooExpensive && !selected ? 'Не хватает бюджета' : ''}">${selected ? '✓ В плане' : 'Добавить'}</button></div></article>`;
+  }).join('');
+  $('catalog').querySelectorAll('[data-district]').forEach(s => s.onchange = () => state.selectedDistricts[s.dataset.district] = s.value);
+  $('catalog').querySelectorAll('[data-add]').forEach(b => b.onclick = async () => {
+    const m = lookup(b.dataset.add);
+    await changeChoices([...state.choices, { id: m.id, district: m.type === 'Город' ? null : state.selectedDistricts[m.id] || 'Нура' }]);
+  });
+}
+function renderSelection() {
+  const cost = state.choices.reduce((s, c) => s + lookup(c.id).cost, 0);
+  $('remaining').innerHTML = `${100 - cost} <small>/ 100</small>`;
+  $('budget-fill').style.width = `${cost}%`;
+  $('decision-count').innerHTML = `${state.choices.length} <small>/ 5</small>`;
+  $('decision-dots').innerHTML = Array.from({ length: 5 }, (_, i) => `<span class="${i < state.choices.length ? 'filled' : ''}"></span>`).join('');
+  $('selected').innerHTML = Array.from({ length: 5 }, (_, i) => {
+    const c = state.choices[i];
+    if (!c) return `<div class="slot empty"><span class="slot-number">${i + 1}</span>Место для решения</div>`;
+    return `<div class="slot"><span class="slot-number">${i + 1}</span><div class="slot-content"><strong>${c.id} · ${escapeHtml(lookup(c.id).name)}</strong><small>${escapeHtml(c.district || 'Весь город')} · ${lookup(c.id).cost} ед.</small></div><button class="remove" data-remove="${i}" aria-label="Удалить ${c.id}" ${state.busy ? 'disabled' : ''}>×</button></div>`;
+  }).join('');
+  $('selected').querySelectorAll('[data-remove]').forEach(b => b.onclick = () => changeChoices(state.choices.filter((_, i) => i !== Number(b.dataset.remove))));
+  $('plan-message').textContent = state.choices.length === 5 ? `Пять решений, ${new Set(state.choices.map(c => lookup(c.id).category)).size} направления. Остаток ${100 - cost} не даёт бонуса.` : `Осталось выбрать ${5 - state.choices.length}. Максимум две меры на направление.`;
+}
+async function changeChoices(next) {
+  if (state.busy) return;
+  state.busy = true;
+  renderCatalog();
+  try {
+    await api('/api/validate', { choices: next });
+    state.choices = next;
+    state.revision++;
+    state.result = null;
+    notice('');
+    $('briefing').innerHTML = '<p class="empty-note">Сценарий изменён. Получите новый разбор после выбора пяти решений.</p>';
+    $('answer').innerHTML = '';
+    renderSelection();
+    renderResults();
+    if (next.length === 5) state.result = await api('/api/analyze', { choices: next });
+    renderResults();
+  } catch (error) { notice(error.message, true); }
+  finally { state.busy = false; renderCatalog(); renderSelection(); }
+}
+function renderResults() {
+  const r = state.result, base = state.config.baseline;
+  const visible = r || base.details;
+  $('hero-score').textContent = fmt(r ? r.score : base.score);
+  $('hero-delta').textContent = r ? `${signed(r.delta)} к исходным ${fmt(base.score)} балла` : 'Базовый Score. Итог появится после пяти решений.';
+  $('score-state').textContent = r ? 'Допустимый сценарий' : 'Исходное состояние';
+  $('average').textContent = fmt(visible.average);
+  $('critical').textContent = visible.critical.length;
+  $('save').disabled = $('export').disabled = !r;
+  $('explain').disabled = !r || state.aiBusy;
+  $('ask').disabled = $('question').disabled = !r || state.aiBusy;
+  $('district-chart').innerHTML = visible.rows.map(row => `<div class="district-row"><span>${escapeHtml(row.name)}</span><div class="district-bars" role="img" aria-label="${escapeHtml(row.name)}: было ${fmt(row.baseline)}, стало ${fmt(row.score)}"><span style="width:${row.baseline}%"></span><span style="width:${row.score}%"></span></div><span class="values">${fmt(row.score)}<small>${signed(row.score - row.baseline)}</small></span></div>`).join('');
+  const weakest = visible.rows.filter(row => Math.abs(row.score - visible.minimum) < 1e-9).map(row => row.name).join(', ');
+  $('weakest').textContent = `Слабейший район: ${weakest} · ${fmt(visible.minimum)}. Его оценка определяет 30% итогового Score. Все шкалы на графике — от 0 до 100.`;
+  $('formula-details').textContent = `${fmt(.7 * visible.average)} + ${fmt(.3 * visible.minimum)} − ${visible.critical.length} = ${fmt(visible.score)}. Отдельные слагаемые округлены только для показа.`;
+  $('indicator-table').innerHTML = `<table><caption class="muted">Шкала 0–100: больше — лучше. Красным отмечены значения ниже 40.</caption><thead><tr><th>Район</th>${state.config.indicators.map(k => `<th title="${escapeHtml(k.name)}">${k.id}</th>`).join('')}</tr></thead><tbody>${visible.rows.map(row => `<tr><td>${escapeHtml(row.name)}</td>${row.indicators.map((v, i) => `<td class="${v < 40 ? 'danger' : ''}" title="${escapeHtml(state.config.indicators[i].name)}">${fmt(v)}</td>`).join('')}</tr>`).join('')}</tbody></table><p class="footnote">${state.config.indicators.map(k => `${k.id}: ${escapeHtml(k.name)}`).join(' · ')}</p>`;
+  if (!r) {
+    $('recommendation-note').textContent = 'После пяти решений сравним допустимые замены одной меры или её района.';
+    $('recommendations').innerHTML = '';
+    $('attribution').innerHTML = $('effects').innerHTML = '<p class="muted">Выберите пять решений.</p>';
+    return;
+  }
+  $('recommendation-note').textContent = `Проверено допустимых альтернатив: ${r.recommendations.checked}. ${r.recommendations.scope}${r.recommendations.candidates.length ? '' : ' Улучшающих замен в этой области поиска нет.'}`;
+  $('recommendations').innerHTML = r.recommendations.candidates.map((c, i) => `<article class="recommendation"><span class="category">ВАРИАНТ ${i + 1}</span><div class="recommendation-score">${fmt(c.score)}<small>${signed(c.gain)}</small></div><h3>${c.remove.id} → ${c.add.id}</h3><p>Вместо ${escapeHtml(lookup(c.remove.id).name)} (${escapeHtml(c.remove.district || 'город')}) — ${escapeHtml(lookup(c.add.id).name)} (${escapeHtml(c.add.district || 'город')}).</p><p>Бюджет: ${c.cost} · критических: ${c.critical}<br>Слабейший район: ${fmt(c.minimum)}</p><button data-apply="${i}">Применить замену</button></article>`).join('');
+  $('recommendations').querySelectorAll('[data-apply]').forEach(b => b.onclick = () => changeChoices(r.recommendations.candidates[Number(b.dataset.apply)].choices));
+  $('attribution').innerHTML = `<table><thead><tr><th>Мера</th><th>Район</th><th>Вклад в Score</th></tr></thead><tbody>${r.attribution.map(a => `<tr><td>${a.id} · ${escapeHtml(a.name)}</td><td>${escapeHtml(a.district || 'город')}</td><td class="positive">${signed(a.value)}</td></tr>`).join('')}<tr><td colspan="2"><strong>Сумма вкладов = общий прирост</strong></td><td><strong>${signed(r.attribution.reduce((s, a) => s + a.value, 0))}</strong></td></tr></tbody></table>`;
+  $('effects').innerHTML = `<table><thead><tr><th>Источник</th><th>Район</th><th>Показатель</th><th>Эффект</th></tr></thead><tbody>${r.contributions.map(c => `<tr><td>${c.source}</td><td>${escapeHtml(c.district)}</td><td>${c.indicator}</td><td>${signed(c.delta)}</td></tr>`).join('')}</tbody></table>`;
+}
+function renderSaved() {
+  $('saved').innerHTML = state.saved.length ? `<table><thead><tr><th>Сценарий</th><th>Score</th><th>Бюджет</th><th>Критических</th><th>Действия</th></tr></thead><tbody>${state.saved.map((s, i) => `<tr><td class="saved-name">${escapeHtml(s.name)}</td><td><strong>${fmt(s.result.score)}</strong></td><td>${s.result.cost}</td><td>${s.result.critical.length}</td><td><button data-load="${i}">Открыть</button> <button data-delete="${i}" aria-label="Удалить сохранённый сценарий ${i + 1}">×</button></td></tr>`).join('')}</tbody></table>` : '<p class="muted">Сохраните два варианта и сравните их Score, бюджет и критические показатели.</p>';
+  $('saved').querySelectorAll('[data-load]').forEach(b => b.onclick = () => { const s = state.saved[Number(b.dataset.load)]; $('scenario-name').value = s.name; changeChoices(s.choices.map(c => ({ ...c }))); });
+  $('saved').querySelectorAll('[data-delete]').forEach(b => b.onclick = () => { state.saved.splice(Number(b.dataset.delete), 1); writeStored(); renderSaved(); });
+}
+function reasonText(reason) {
+  if (reason?.startsWith('provider_http_')) return `Сервис вернул HTTP ${reason.split('_').at(-1)}. Проверьте ключ, доступ к модели и API-баланс.`;
+  return { offline: 'Локальный разбор по правилам; внешняя модель не вызывалась.', missing_configuration: 'На сервере не заданы ключ или модель. Показан локальный разбор.', timeout: 'Модель не ответила вовремя. Показан локальный разбор.', invalid_selection: 'Модель вернула непроверяемые аргументы. Показан локальный разбор.', connection_error: 'Не удалось связаться с моделью. Показан локальный разбор.', unknown_provider: 'Провайдер настроен неверно. Показан локальный разбор.' }[reason] || 'Показан локальный разбор.';
+}
+function briefingHtml(b, short = false) {
+  const strengths = short ? b.strengths.slice(0, 2) : b.strengths;
+  const risks = short ? b.risks.slice(0, 2) : b.risks;
+  return `<p class="briefing-mode">${b.mode === 'live' ? `ИИ: ${escapeHtml(b.provider)} · ${escapeHtml(b.model)}${b.cached ? ' · сохранённый ответ' : ''}. Модель выбрала аргументы из проверенных фактов.` : escapeHtml(reasonText(b.reason))}</p><p class="briefing-summary">${escapeHtml(b.summary)}</p><h3>Сильные стороны</h3><ul class="briefing-list">${strengths.map(t => `<li>${escapeHtml(t)}</li>`).join('')}</ul><h3>Риски и компромиссы</h3><ul class="briefing-list">${risks.map(t => `<li>${escapeHtml(t)}</li>`).join('')}</ul>${b.recommendation ? `<h3>Следующий вариант</h3><p class="muted">${escapeHtml(b.recommendation.text)}</p>` : '<p class="muted">Среди проверенных замен улучшения не найдено.</p>'}`;
+}
+async function showBriefing() {
+  if (!state.result || state.aiBusy) return;
+  const revision = state.revision;
+  state.aiBusy = true;
+  $('explain').disabled = true;
+  $('explain').textContent = 'Готовим разбор…';
+  try {
+    const b = await api('/api/explain', { choices: state.choices });
+    if (revision !== state.revision) return;
+    $('briefing').innerHTML = briefingHtml(b);
+  } catch (error) { if (revision === state.revision) notice(error.message, true); }
+  finally { state.aiBusy = false; $('explain').textContent = 'Разобрать сценарий'; renderResults(); }
+}
+async function askQuestion() {
+  if (!state.result || state.aiBusy) return;
+  const question = $('question').value.trim();
+  if (question.length < 3 || question.length > 240) { notice('Вопрос должен содержать от 3 до 240 символов.', true); return; }
+  const revision = state.revision;
+  state.aiBusy = true;
+  $('answer').textContent = 'Подбираем факты для ответа…';
+  renderResults();
+  try {
+    const b = await api('/api/ask', { choices: state.choices, question });
+    if (revision === state.revision) $('answer').innerHTML = briefingHtml(b, true);
+  } catch (error) { if (revision === state.revision) notice(error.message, true); }
+  finally { state.aiBusy = false; renderResults(); }
+}
+async function start() {
+  try {
+    state.config = await api('/api/config');
+    const ai = state.config.ai;
+    $('connection').textContent = ai.configured ? `${ai.provider} · настроен, не проверен` : 'Локальный режим';
+    $('example').onclick = () => changeChoices(state.config.presets.example);
+    $('cheap').onclick = () => changeChoices(state.config.presets.cheap);
+    $('clear').onclick = () => { $('scenario-name').value = ''; changeChoices([]); };
+    $('explain').onclick = showBriefing;
+    $('question-form').onsubmit = event => { event.preventDefault(); askQuestion(); };
+    document.querySelectorAll('[data-question]').forEach(button => button.onclick = () => { $('question').value = button.dataset.question; askQuestion(); });
+    $('save').onclick = () => {
+      if (!state.result) return;
+      state.saved.push({ name: $('scenario-name').value.trim() || `Сценарий ${state.saved.length + 1}`, choices: state.choices.map(c => ({ ...c })), result: state.result });
+      if (state.saved.length > 12) state.saved.shift();
+      writeStored(); renderSaved();
+    };
+    $('export').onclick = () => {
+      if (!state.result) return;
+      const data = { schemaVersion: 2, name: $('scenario-name').value.trim() || 'Сценарий', choices: state.choices, result: state.result };
+      const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+      const link = document.createElement('a'); link.href = url; link.download = 'akim-scenario.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+    };
+    renderCatalog(); renderSelection(); renderResults(); renderSaved();
+    // Never trust scores in browser storage; recalculate through the server.
+    for (const stored of readStored()) {
+      try { state.saved.push({ ...stored, result: await api('/api/analyze', { choices: stored.choices }) }); } catch { /* Ignore invalid older scenarios. */ }
+    }
+    renderSaved();
+  } catch { $('connection').textContent = 'Нет связи с сервером'; notice('Не удалось запустить интерфейс. Выполните npm start и откройте http://localhost:3000.', true); }
+}
+start();
+
+</script>
+</body>
+</html>
